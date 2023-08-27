@@ -1,0 +1,12 @@
+{
+    "musics":[
+        {
+            "id" : 1,
+            "name" :"Họ đâu thương em ",
+            "singer":"Phan Duy Anh",
+            "path" : "/music/song1.mp3",
+            "image" : "/img/song1.jpg"
+        }
+    ]
+
+}

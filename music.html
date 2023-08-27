@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="grid ">
+            <div class="row">
+                <div id="toast"></div>
+                <div class="col l-1 music__left m-1 c-0"  >
+                    <div class="music__user">
+                        <div class="music--img">
+                            <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                        </div>
+                        <p>hungmusic</p>
+                    </div>
+                    <div onclick="showSuccessToast();" class="music__profile">
+                        <i class="fas fa-gauge-high"></i>
+                        <p>Khám Phá</p>
+                    </div>
+                    <div onclick="showSuccessToast();" class="music__digital">
+                        <i class="fas fa-digital-tachograph"></i>
+                        <p>Radio</p>
+                    </div>
+                    <div onclick="showSuccessToast();" class="music__scheduling">
+                        <i class="fas fa-music"></i>
+                        <p>Nhạc Mới</p>
+                    </div>
+                    <div onclick="showSuccessToast();" class="music__dashboard">
+                        <i class="fas fa-star"></i>
+                        <p>Chủ Đề & Thể Loại</p>
+                    </div>
+                    <div onclick="showSuccessToast();" class="music__setting">
+                        <i class="fas fa-gear"></i>
+                        <p>Cài Đặt</p>
+                    </div>
+                </div>
+                <div class="col l-9 music__center m-11 c-0 ">
+                    <div class="music--search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search music">
+                    </div>
+                    <div class="music--artist">
+                            <div class="music--artist-nav">
+                                    <div  class="tab-item active">
+                                        <i class="fas fa-wave-square"></i>
+                                        <p>Stations</p>
+                                    </div>
+                                    <div class="tab-item">
+                                        <i class="fas fa-list-numeric"></i>
+                                        <p>Playlists</p>
+
+                                    </div>
+                                    <div class="tab-item">
+                                        <i class="fas fa-microphone"></i>
+                                        <p>Nghệ Sĩ</p>
+
+                                    </div>
+                                    <div class="tab-item">
+                                        <i class="fas fa-list-squares"></i>
+                                        <p>Albums</p>
+                                    </div>
+                                    <div class="tab-item"> 
+                                        <i class="fas fa-music"></i>
+                                        <p>Bài hát</p>
+                                    </div>
+                                    <div class="line"></div>
+                            </div>
+                        <div class="music--artist-content">
+                            <div class="artist--content-header">
+                                <h2>Nghệ Sĩ</h2>
+                                <div class="artist--content-header-add">
+                                    <i class="fa-regular fa-user"></i>
+                                    <p>Thêm Nghệ Sĩ</p>
+                                </div>
+                            </div>
+                            <div class="artist--content-center">
+                                <div class="grid imgArtist">
+                                    <div class="row">
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="artist-center--img">
+                                                <img src="/img/mono.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="artist-center--img">
+                                                <img src="/img/song6.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="artist-center--img">
+                                                <img src="/img/hoaminzy.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="artist-center--img">
+                                                <img src="/img/sobin.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="artist-center--img">
+                                                <img src="/img/jus.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music--artist-content">
+                            <div class="artist--content-header">
+                                <h2>Thể Loại</h2>
+                                <div class="artist--content-header-add">
+                                    <i class="fas fa-list-dots"></i>
+                                    <p>ADD GENRES</p>
+                                </div>
+                            </div>
+                            <div class="artist--content-center">
+                                <div class="grid imgArtist">
+                                    <div class="row">
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music--artist-content">
+                            <div class="artist--content-header">
+                                <h2>GENRES</h2>
+                                <div class="artist--content-header-add">
+                                    <i class="fas fa-list-dots"></i>
+                                    <p>ADD GENRES</p>
+                                </div>
+                            </div>
+                            <div class="artist--content-center">
+                                <div class="grid imgArtist">
+                                    <div class="row">
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col imgArtists l-2-4">
+                                            <div class="genres-center--img">
+                                                <img src="/img/334921890_1563375204171885_4050510079069441005_n.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music--genres"></div>
+                    <div class="music--moods"></div>
+                </div>
+                <div class="col l-2 music__right m-0 c-12">
+                    <div class="music--img-song">
+                        <div class="img" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                    </div>
+                    <div class="music--img-directional">
+                        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                        <audio id="audio" src=""></audio>
+                    </div>
+                    <div class="control">
+                        <div class="control--top">
+                            <div class="btn btn-repeat">
+                                <i class="fas fa-redo"></i>
+                              </div>
+                              <div style="padding-top: 15px;" class="time-display">
+                                <span class="current-time">0:00</span>
+                                <span class="time-separator">&nbsp/&nbsp</span>
+                                <span class="video-duration">0:00</span>
+                              </div>
+                              <div class="btn btn-random">
+                                <i class="fas fa-random"></i>
+                              </div>
+                        </div>
+                        <div class="control--center">
+                            <div class="btn btn-prev">
+                                    <i class="fas fa-step-backward"></i>
+                              </div>
+                              <div class="btn btn-toggle-play">
+                                    <i class="fas fa-pause icon-pause"></i>
+                                    <i class="fas fa-play icon-play"></i>
+                              </div>
+                              <div class="btn btn-next">
+                                    <i class="fas fa-step-forward"></i>
+                              </div>
+                        </div>
+                        <div class="control--bottom">
+                            <div class="btn btn-volume " >
+                                <i class="fas fa-volume-low vloume-play"></i>
+                                <i class="fas fa-volume-off vloume-pause" ></i>
+                          </div>
+                          <div class="btn btn-heart" >
+                                <i class="fas fa-heart "></i>
+                               
+                          </div>
+                          <div class="btn btn-option">
+                            <i class="fas fa-ellipsis-h"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="control--volume">
+                        <input  type='range' min='0' value='99' max='100' class="volume_slider" />
+                      </div>
+                      <div class="player">
+                            <div class="grid">
+                                <div class="row">
+                                    <div  class="col l-4">
+                                        <div class="player--imgArtist">
+                                            <div class="img" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-8">
+                                        <div class="body ">
+                                            <h3 class="title">Đừng mpng a chúc em hạnh phúc</h3>
+                                            <p class="author songArtist">Khải Đăng</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listsong">
+                                <h2>Danh sách bài hát</h2>
+                            </div>
+                            <div class="playlist"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/music.js"></script>
+</html>
